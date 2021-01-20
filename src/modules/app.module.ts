@@ -4,8 +4,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Connection } from 'typeorm';
 
 @Module({
-    modules: [UsersModule, TypeOrmModule.forRoot()],
+  imports: [UsersModule, TypeOrmModule.forRoot()],
 })
-export class ApplicationModule {
-    constructor(private readonly connection: Connection) {}
-}
+export class AppModule {}

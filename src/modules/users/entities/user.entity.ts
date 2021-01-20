@@ -1,24 +1,21 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 import { BaseEntity } from '../../base/base.entity';
-import { ApiModelProperty, ApiModelPropertyOptional } from '@nestjs/swagger';
+// import { ApiModelProperty, ApiModelPropertyOptional } from '@nestjs/swagger';
 
 @Entity('users')
-export class User extends BaseEntity{
+export class User extends BaseEntity {
+  @PrimaryGeneratedColumn()
+  id: number;
 
   @Column({ length: 50 })
-  @ApiModelPropertyOptional()
+  // @ApiModelPropertyOptional()
   readonly name: string;
 
   @Column({ length: 50 })
-  @ApiModelProperty()
+  // @ApiModelProperty()
   readonly age: number;
-  
-  @Column({ length: 50 })
-  @ApiModelProperty()
-  readonly favouriteColor: string;
 
-  constructor(o: Object) {
-    super();
-    Object.assign(this, o);
-  }
+  @Column({ length: 50 })
+  // @ApiModelProperty()
+  readonly favouriteColor: string;
 }

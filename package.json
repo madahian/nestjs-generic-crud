@@ -10,25 +10,26 @@
     "start:prod": "node dist/server.js"
   },
   "dependencies": {
-    "@nestjs/common": "^4.6.4",
-    "@nestjs/core": "^4.6.4",
-    "@nestjs/microservices": "^4.6.4",
-    "@nestjs/swagger": "^1.1.4",
-    "@nestjs/testing": "^4.6.1",
-    "@nestjs/typeorm": "^2.0.0",
-    "@nestjs/websockets": "^4.5.8",
+    "@nestjs/common": "^7.6.5",
+    "@nestjs/core": "^7.6.5",
+    "@nestjs/microservices": "^7.6.5",
+    "@nestjs/swagger": "^4.7.11",
+    "@nestjs/testing": "^7.6.5",
+    "@nestjs/typeorm": "^7.1.5",
+    "@nestjs/websockets": "^7.6.5",
     "automapper-ts": "^1.9.0",
-    "class-validator": "^0.7.3",
-    "mysql": "^2.15.0",
-    "redis": "^2.7.1",
-    "reflect-metadata": "^0.1.12",
-    "rxjs": "^5.5.6",
-    "typeorm": "^0.1.12",
-    "typescript": "^2.7.2"
+    "body-parser": "^1.19.0",
+    "class-validator": "^0.13.1",
+    "mysql": "^2.18.1",
+    "redis": "^3.0.2",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.6.3",
+    "typeorm": "^0.2.30",
+    "typescript": "^4.1.3"
   },
   "devDependencies": {
-    "@types/node": "^8.9.4",
-    "nodemon": "^1.15.1",
-    "ts-node": "^3.3.0"
+    "@types/node": "^14.14.22",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1"
   }
 }
