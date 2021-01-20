@@ -1,12 +1,4 @@
-import {
-  Controller,
-  Get,
-  Post,
-  Delete,
-  Put,
-  Body,
-  Param,
-} from '@nestjs/common';
+import { Controller } from '@nestjs/common';
 // import { ApiUseTags, ApiResponse } from '@nestjs/swagger';
 import { User } from './entities/user.entity';
 import { BaseController } from '../base/base.controller';
